@@ -2,11 +2,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Nav = (props) => {
+const Nav = ({nameofApp}) => {
     return(
         <View style={navStyle.basicText}>
-            <Text>Header</Text>
-            <Text>{props.children}</Text>
+            <Text>{nameofApp}</Text>
         </View>
     )
 }
